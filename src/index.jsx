@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 
 import '../assets/stylesheets/application.scss';
 
-import App from '../src/components/app';
+import App from './components/app';
 
 const root = document.getElementById('root');
 if (root) {
-  ReactDOM.render(<App />, root);
+  ReactDOM.render(<App />, document.querySelector('#root'));
 }
