@@ -8,12 +8,11 @@ import Marker from './marker';
 import flats from '../../data/flats';
 
 
-
 class App extends Component{
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
-      selectedFlat: flats[1],
+      selectedFlat: flats[0],
       flats,
     }
   }
