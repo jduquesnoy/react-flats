@@ -8,7 +8,7 @@ import flats from '../../data/flats';
 
 
 
-class App extends React.Component{
+class App extends Component{
   constructor(props){
     super(props);
     this.state = {
@@ -23,7 +23,7 @@ class App extends React.Component{
           <FlatList flats={this.state.flats}/>
         </div>
         <div className="map-container">
-        {/* <Map/> */}
+        <Map/>
         </div>
       </div>
     );

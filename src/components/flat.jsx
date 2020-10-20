@@ -1,7 +1,8 @@
 import React from 'react';
+import { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-class Flat extends React.Component{
+class Flat extends Component{
   constructor(props){
     super(props);
   }

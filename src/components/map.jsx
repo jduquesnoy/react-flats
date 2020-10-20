@@ -1,27 +1,21 @@
-import {Component} from 'react';
-import React from 'react';
-import ReactMapGL from 'react-map-gl';
- 
-class Map extends Component {
- 
-  state = {
-    viewport: {
-      width: 400,
-      height: 400,
-      latitude: 37.7577,
-      longitude: -122.4376,
-      zoom: 8
-    }
-  };
- 
-  render() {
-    return (
-      <ReactMapGL
-        {...this.state.viewport}
-        onViewportChange={(viewport) => this.setState({viewport})}
-      />
-    );
-  }
-}
+import React, { useState } from "react";
+import ReactMapGL from "react-map-gl";
 
-export default Map
+export default function Map() {
+  const [viewport, setViewport] = useState({
+    latitude: 45.4211,
+    longitude: -75.6903,
+    width: "100vw",
+    height: "100vh",
+    zoom: 10
+  });
+
+
+  return (
+    <div>
+      <ReactMapGL {...viewport}>
+          markers here
+      </ReactMapGL>
+    </div>
+  );
+}
