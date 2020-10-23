@@ -9,7 +9,7 @@ class Flat extends Component{
   handleClick = () => {
     this.props.selectFlat(this.props.index);
   }
-  
+
   render() {
 
     return (
